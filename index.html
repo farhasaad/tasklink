@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="main.css"> 
+    <style>
+        #about {
+            border: 2px solid #333; /* Adds a solid border */
+            padding: 20px;  /* Adds space inside the border */
+            border-radius: 10px;  /* Rounds the corners */
+        }
+
+        .portfolio-item {
+            position: relative; /* Necessary for absolute positioning of the plus sign */
+        }
+
+        .plus-sign {
+            visibility: hidden; /* Hide the plus sign by default */
+            opacity: 0;
+            transition: opacity 0.3s ease, visibility 0s 0.3s; /* Smooth transition for opacity */
+        }
+
+        .portfolio-item:hover .plus-sign {
+            visibility: visible; /* Show the plus sign on hover */
+            opacity: 1; /* Make the plus sign fully visible */
+            transition: opacity 0.3s ease, visibility 0s 0s; /* Make the transition immediate */
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About Me</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <img class="masthead-avatar mb-5" src="IMG/PROFILE.png" alt="Avatar" />
+            <h1 class="masthead-heading text-uppercase mb-0">profillloooo</h1>
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <p class="masthead-subheading font-weight-light mb-0">Graphic Artist - Web Designer - Illustrator</p>
+        </div>
+    </header>
+
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-4">
+                    <div class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <img src="IMG/HOME ICON.png" alt="Portfolio 1" class="img-fluid">
+                        <div class="plus-sign position-absolute top-50 start-50 translate-middle">
+                            <i class="fas fa-plus-circle fa-3x text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <img src="IMG/CAKE ICON.png" alt="Portfolio 2" class="img-fluid">
+                        <div class="plus-sign position-absolute top-50 start-50 translate-middle">
+                            <i class="fas fa-plus-circle fa-3x text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                        <img src="IMG/SEERK ICON.jpg" alt="Portfolio 3" class="img-fluid">
+                        <div class="plus-sign position-absolute top-50 start-50 translate-middle">
+                            <i class="fas fa-plus-circle fa-3x text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                        <img src="IMG/PLAYICON.png" alt="Portfolio 4" class="img-fluid">
+                        <div class="plus-sign position-absolute top-50 start-50 translate-middle">
+                            <i class="fas fa-plus-circle fa-3x text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                        <img src="IMG/SAVE ICON.webp" alt="Portfolio 5" class="img-fluid">
+                        <div class="plus-sign position-absolute top-50 start-50 translate-middle">
+                            <i class="fas fa-plus-circle fa-3x text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                        <img src="IMG/SEA ICON.png" alt="Portfolio 6" class="img-fluid">
+                        <div class="plus-sign position-absolute top-50 start-50 translate-middle">
+                            <i class="fas fa-plus-circle fa-3x text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals for Portfolio Items -->
+    <div class="modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModalLabel1">Portfolio Item 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="IMG/HOME ICON.png" alt="Portfolio 1" class="img-fluid mb-3">
+                    <p>This is a description of Portfolio Item 1. It represents an important project that highlights my skills in graphic design and web development. I worked on this project for several months, and it was a great learning experience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModalLabel2">Portfolio Item 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="IMG/CAKE ICON.png" alt="Portfolio 2" class="img-fluid mb-3">
+                    <p>This is a description of Portfolio Item 2. It showcases my work in UX/UI design and how I combined creativity with user-centered design principles to deliver a visually appealing and functional design.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional modals for other portfolio items can be added here in the same way -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
